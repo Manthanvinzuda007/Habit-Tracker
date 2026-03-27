@@ -1,0 +1,58 @@
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: var(--surface-color);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.controls-left, .controls-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.month-input, .habit-input {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.add-habit-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-btn {
+  padding: 0.5rem 1.2rem;
+  background-color: var(--success-color);
+  color: white;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+.theme-btn, .export-btn {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.export-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}

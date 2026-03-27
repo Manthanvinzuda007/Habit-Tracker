@@ -1,0 +1,68 @@
+.table-container {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.habit-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.habit-table th, .habit-table td {
+  border: 1px solid var(--border-color);
+  min-width: 40px;
+  height: 48px;
+}
+
+.habit-table th {
+  background: var(--surface-color);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: var(--surface-color);
+  min-width: 200px;
+  text-align: left;
+  padding: 0 16px;
+}
+
+.top-left-header {
+  z-index: 3;
+}
+
+.habit-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #dc3545;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+
+.habit-name-col:hover .delete-btn {
+  opacity: 1;
+}
+
+.cell-btn {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 0;
+}
+
+.cell-btn:hover { background: var(--cell-hover); }
+.cell-btn.completed { background: var(--success-color); }
+.empty-state { padding: 32px; color: var(--text-secondary); }
